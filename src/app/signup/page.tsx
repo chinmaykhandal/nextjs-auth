@@ -46,7 +46,7 @@ export default function SignupPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1>{loading ? "processing" : "Login"}</h1>
+      <h1>{loading ? "processing" : "Signup"}</h1>
       <hr />
       <label htmlFor="username">username</label>
       <input
@@ -80,7 +80,7 @@ export default function SignupPage() {
         onClick={onSignup}
         className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
       >
-        {buttonDisabled ? "No Signup" : "Signup"}
+        {buttonDisabled ? "Signup" : "Signup"}
       </button>
       <Link href="/login">Visit Login Page</Link>
     </div>
